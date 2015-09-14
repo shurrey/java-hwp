@@ -12,6 +12,9 @@ The Compound File HWP 5.0 version of POIFS File System is processed using the Ap
 How to use
 
 File hwp = new File ("hangul.hwp"); // HWP files to extract the text
+
 Writer writer = new StringWriter (); // Buffer to output the extracted text
+
 HwpTextExtractor.extract (hwp, writer); // Extract text from files
+
 String text = writer.toString (); // Extracted text
